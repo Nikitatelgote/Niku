@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Student calculate</title>
+</head>
+<body>
+    
+        <h1>Student grade calculater</h1>
+
+    
+    <form>
+        <input type="text"placeholder="maths" id="maths"><br><br>
+   
+        <input type="text"placeholder="ENGLISH"id="english"><br><br>
+    
+        <input type="text"placeholder="COMPUTER"id="computer"><br><br>
+    
+        <input type="text"placeholder="PHYSICS"id="physics"><br><br>
+    
+    
+        <input type="button"value="Result"onclick="calculate()"><br><br>
+    </form>
+    <script>
+    function calculate()
+        {
+            let maths = document.getElementById("maths").value;
+            let english=document.getElementById("english").value;
+            let computer=document.getElementById("computer").value;
+            let physics=document.getElementById("physics").value;
+            maths=Number.parseInt(maths);
+            english=Number.parseInt(english);
+            computer=Number.parseInt(computer);
+            physics=Number.parseInt(physics);
+            
+            let total = maths + english + computer + physics;
+            let per=(total/400*100)
+            document.write(per)
+            
+               if (per<=100 && per>=80){
+            document.write("your per is ${per}% the grade A");
+            
+            }else if(per<=89 && per>=76){
+            document.write("your per is ${per}% the grade B");
+            }else if(per<=75 &&  per>=65){
+            document.write("your per is ${per}% the grade C");
+            }else if(per<=78 && per>=56){
+            document.write("your per is ${per}% the grade D");
+            }
+                
+            
+            
+        
+
+        }
+    </script>
+    
+</body>
+</html>
