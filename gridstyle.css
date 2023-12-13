@@ -66,6 +66,13 @@
             justify-content: space-evenly;
             
         }
+
+        .dis_child{
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            width:33%;
+        }
  @media(max-width:500px){
         .discount_1{
                flex-direction:column;
@@ -75,12 +82,6 @@
                 width: 100%;
             }
  }
-        .dis_child{
-            display: flex;
-            align-items: center;
-            gap: 5px;
-            width:33%;
-        }
 
         /*iMAGE GRID START*/
         .Images{
