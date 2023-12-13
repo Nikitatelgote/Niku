@@ -66,6 +66,12 @@
             justify-content: space-evenly;
             
         }
+ @media(max-width:500px){
+        .discount_1{
+               flex-flow:column;
+               align-items:center;
+        }
+ }
         .dis_child{
             display: flex;
             align-items: center;
