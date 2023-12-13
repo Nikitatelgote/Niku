@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .Images{
+            display: grid;
+            height: 100vh;
+            gap: 5px;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows:repeat(3,auto);
+            grid-template-areas:
+            "A A B"
+            "C D B"
+            "E F F"
+            "H I J"
+            "H K K"
+            "L M N"
+            ;
+        }
+       img{
+            width: 100%;
+            height: 100%;
+        }
+        .A{
+            grid-area: A;
+        }
+        .B{
+            grid-area: B;
+        }
+        .C{
+            grid-area: C;
+        }
+        .D{
+            grid-area: D;
+        }
+        .E{
+            grid-area: E;
+        }
+        .F{
+            grid-area: F;
+        }
+        .H{
+            grid-area: H;
+        }
+        .I{
+            grid-area: I;
+        }
+        .J{
+            grid-area: J;
+        }
+        .K{
+            grid-area: K;
+        }
+        .L{
+            grid-area: L;
+        }
+        .M{
+            grid-area: M;
+        }
+        .N{
+            grid-area: N;
+        }
+        @media(max-width:500px){
+            .Images{
+                grid-template-columns:1fr;
+                grid-template-areas:
+            "A"
+            "B"
+            "C"
+            "D"
+            "E"
+            "F"
+            "H"
+            "I"
+            "J"
+            "K"
+            "L"
+            "M"
+            "N"
+            ;
+            }
+            .A,.B,.C,.D,.E,.F{
+                height: 300px;
+            }
+            
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="Images">
+        <div class="A">
+            <img class="Z" src="photos/goulash-8388432_640.jpg" alt="">
+        </div>
+        <div class="B">
+            <img class="Z" src="photos/istockphoto-1290444763-612x612.jpg"
+                alt="">
+        </div>
+        <div class="C">
+            <img class="Z" src="photos/pexels-rajesh-tp-1633525.jpg" alt="">
+        </div>
+        <div class="D">
+            <img class="Z" src="photos/pexels-chan-walrus-958545.jpg"
+                alt="">
+        </div>
+        <div class="E">
+            <img class="Z" src="/photos/food food.jpg"
+                alt="">
+        </div>
+      
+         <div class="F">
+            <img class="Z" src="photos/hqdefault.jpg" alt="">
+        </div>
+        <div class="H">
+            <img class="Z" src="/photos/cupcakes.jpg.jpg" alt="">
+        </div>
+        <div class="I">
+            <img class="Z" src="/photos/Easy-Dessert.jpg" alt="">
+        </div>
+        <div class="J">
+            <img class="Z" src="photos/pexels-ella-olsson-1640772.jpg"
+                alt="">
+        </div>
+        <div class="K">
+            <img class="Z" src="photos/Indian-Cauliflower-Potatoe.jpg"
+                alt="">
+        </div>
+        <div class="L">
+            <img class="Z" src="photos/download (5).jpg" alt="">
+        </div>
+        <div clas="M">
+            <img class="Z" src="/photos/Easy-Dessert.jpg" alt="">
+        </div>
+        <div class="N">
+            <img class="Z"
+                src="/photos/burgers-restaurant-menu-template_23-2149005028.avif"
+                alt="">
+        </div> 
+    </div>
+</body>
+</html>
